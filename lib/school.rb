@@ -26,6 +26,7 @@ class School
   end
 
   def sort
+    #  is able to sort the students
     sorted_hash = {}
     @roster.sort.each { |grade, name_array| sorted_hash[grade] = name_array.sort }
     sorted_hash
